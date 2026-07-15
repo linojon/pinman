@@ -1,0 +1,77 @@
+name: 🧪 Pinman 2 Beta — bug report
+description: For beta testers — report a problem with a Pinman 2 beta build
+labels: ["bug", "pinman2", "beta"]
+title: "[Pinman 2 Beta] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Pinman 2! Please fill out the fields below.
+
+        > **This issue tracker is public** — anyone on the internet can read it,
+        > including people outside the beta program. Please leave out private or
+        > proprietary information (names, license keys, business details, personal
+        > file paths — check screenshots and logs too). If a detail matters to the
+        > bug but can't be public, omit it here and email it to
+        > jonathan@pinmantech.com, mentioning the issue number.
+  - type: input
+    id: build
+    attributes:
+      label: Beta build
+      description: The build/version from the About screen or the download you were sent.
+      placeholder: "2.0-beta.3"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 23H2, 64-bit"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Where in the product did this happen?
+      options:
+        - Install / setup
+        - Explorer (items, checkpoints, drift)
+        - Profiles / guided fixes
+        - Savepoints / backups
+        - Operator controls (volume, display, overlays…)
+        - CLI / API / MCP
+        - Other / not sure
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Pinman 2
+        2. Click ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, logs, or error messages
+      description: Optional, but very helpful. Drag and drop images here. Please blur or crop anything private.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I've checked this report — including screenshots and logs — and it contains no private or proprietary information.
+          required: true

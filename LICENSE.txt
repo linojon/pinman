@@ -1,0 +1,24 @@
+Pinman
+
+Copyright (c) 2026 Jonathan Linowes. All rights reserved.
+
+This software is proprietary and confidential. The downloadable releases
+distributed through this repository are licensed, not sold.
+
+You may download and install Pinman for your personal use. You may NOT:
+
+  - decompile, reverse engineer, disassemble, or otherwise attempt to derive
+    the source code of the software;
+  - redistribute, sublicense, sell, rent, lease, or lend the software or its
+    installers;
+  - modify, adapt, or create derivative works based on the software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT
+OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+This file is a starting point, not legal advice. Replace it with a formal
+End User License Agreement (EULA) if you need stronger or more specific terms.

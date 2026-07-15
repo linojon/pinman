@@ -1,0 +1,39 @@
+name: 💡 Feature request
+description: Suggest an idea or improvement for Pinman
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **This issue tracker is public.** Please leave out private or proprietary
+        > information; if needed, email details to jonathan@pinmantech.com.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - Pinman Operator
+        - Pinman 2 (beta)
+        - Both / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the use case or frustration this idea addresses.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would you like Pinman to do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
