@@ -1,4 +1,9 @@
-# Pinman
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/pinman-logo-text-dark.png">
+    <img src="images/pinman-logo-text.png" alt="Pinman" width="420">
+  </picture>
+</p>
 
 > The official download and support home for **Pinman**.
 
