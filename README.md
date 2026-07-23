@@ -66,6 +66,7 @@ kits are labeled separately from kits tested and released by Pinman.
 - 🔎 Browse existing reports: [open issues](../../issues?q=is%3Aissue+is%3Aopen).
 - 💬 **Question or need help?** Check [Discussions](../../discussions) or see
   [SUPPORT.md](SUPPORT.md).
+- 🗺️ **What's coming next?** See the [ROADMAP](ROADMAP.md).
 - 📝 **Release history:** see the [CHANGELOG](CHANGELOG.md).
 
 > **This is a public issue tracker.** Please don't include private or proprietary
