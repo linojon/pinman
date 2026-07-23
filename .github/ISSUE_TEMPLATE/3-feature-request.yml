@@ -7,16 +7,6 @@ body:
       value: |
         > **This issue tracker is public.** Please leave out private or proprietary
         > information; if needed, email details to jonathan@pinmantech.com.
-  - type: dropdown
-    id: product
-    attributes:
-      label: Product
-      options:
-        - Pinman Operator
-        - Pinman 2 (beta)
-        - Both / not sure
-    validations:
-      required: true
   - type: textarea
     id: problem
     attributes:

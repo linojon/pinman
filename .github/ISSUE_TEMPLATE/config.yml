@@ -4,7 +4,7 @@ contact_links:
     url: https://github.com/linojon/pinman/discussions
     about: For usage questions and general help, please use Discussions.
   - name: 🔒 Private or sensitive details
-    url: https://pinmantech.com
+    url: https://github.com/linojon/pinman/blob/master/SUPPORT.md
     about: Issues here are public. Email private details to jonathan@pinmantech.com, referencing your issue number.
   - name: 🧪 Apply to the Pinman 2 beta
     url: https://pinmantech.com/beta

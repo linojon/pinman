@@ -1,7 +1,6 @@
 # Getting support for Pinman
 
-Thanks for using Pinman! Here's how to get help — for **Pinman Operator** and the
-**Pinman 2 beta** alike.
+Thanks for using Pinman! Here's how to get help.
 
 ## I have a question or need help using Pinman
 
@@ -11,12 +10,11 @@ Thanks for using Pinman! Here's how to get help — for **Pinman Operator** and 
 
 ## I found a bug
 
-Please **[open an issue](../../issues/new/choose)** — pick the template for your
-product (Pinman Operator, or Pinman 2 Beta if you're a beta tester).
+Please **[open an issue](../../issues/new/choose)** and pick the matching template.
 
 A good report includes:
 
-- **Product and version** (shown in the app's About screen / installer filename)
+- **Version** (shown in the app's About screen / installer filename)
 - **Windows version** (e.g. Windows 11 23H2, 64-bit)
 - **What you did**, what you expected, and what actually happened
 - Steps to reproduce, plus screenshots or error messages if you have them
