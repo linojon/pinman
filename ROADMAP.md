@@ -22,4 +22,6 @@ Found a bug or have a request? [Open an issue](../../issues/new/choose).
 - Auth: License key register and manage
 - Tutorials: Authoring a schema and kit
 - Tutorials: Pinball cabinet setup guide
+- App: Add code signing (avoids installer warnings)
 - App: Automatic update checking (today you install the new build)
+- Doc: Complete the planned online docs
