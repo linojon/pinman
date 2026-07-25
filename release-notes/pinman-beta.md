@@ -1,6 +1,6 @@
 <!--
   GitHub release notes body for a Pinman 2 beta installer release.
-  Used as: gh release create v2.0.<YYMMDD> --notes-file release-notes/pinman-2-beta.md --prerelease
+  Used as: gh release create v2.0.<YYMMDD> --notes-file release-notes/pinman-beta.md --prerelease
   Edit the version/date and the highlights each release, then publish.
   This file holds the CURRENT build's body; it's rewritten each cut. The running
   history lives in CHANGELOG.md and on the GitHub Releases page (each tag keeps its own).
@@ -39,7 +39,7 @@ See what's planned next in the **[roadmap](https://github.com/linojon/pinman/blo
 
 ### Install (quick start)
 
-1. Download `Pinman-2-Setup-<version>.exe` from the link in your acceptance email.
+1. Download `Pinman-Setup-<version>.exe` from the link in your acceptance email.
 2. Run it and follow the setup prompts. (Access from other machines on your network is
    an opt-in step during setup; local use needs nothing extra.)
 3. When setup finishes, open the app and complete the Getting Started tutorial.
@@ -51,7 +51,7 @@ download reputation.
 ### Verify your download
 
 Match the SHA-256 in your email against the file:
-`Get-FileHash .\Pinman-2-Setup-*.exe -Algorithm SHA256`.
+`Get-FileHash .\Pinman-Setup-*.exe -Algorithm SHA256`.
 
 ### Requirements
 
