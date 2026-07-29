@@ -12,16 +12,15 @@ Found a bug or have a request? [Open an issue](../../issues/new/choose).
 - Captures: Live refresh mode
 - Profiles: Build out the guided manual mode instructions
 - Profiles: Advanced profile interfaces and parameters; compound profiles
-- Schema: Schema authoring via UI improvements
+- Schema: Improved schema authoring via UI
 - Bundles: Explorer lens of associated items
-- Bundles: VPX table archive and restore
+- Bundles: Collect and archive, restore
 - Journal: Record mode for automatic checkpoints
-- Diagnostics: MCP interface for AI agents
 - Diagnostics: System health metrics
+- Diagnostics: MCP interface for AI agents
 - Auth: Operator, manager, technician user roles and entitlement
-- Auth: License key register and manage
-- Tutorials: Authoring a schema and kit
+- Auth: License key register and manage - required for public release
+- Tutorials: More tutorials, including Authoring a schema and kit
 - Tutorials: Pinball cabinet setup guide
-- App: Add code signing (avoids installer warnings)
-- App: Automatic update checking (today you install the new build)
+- App: Automatic update checking 
 - Doc: Complete the planned online docs

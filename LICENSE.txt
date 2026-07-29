@@ -1,24 +1,305 @@
-Pinman
+Pinman — License
 
-Copyright (c) 2026 Jonathan Linowes. All rights reserved.
+Copyright (c) 2026 Parkerhill Technology Corp. All rights reserved.
 
-This software is proprietary and confidential. The downloadable releases
-distributed through this repository are licensed, not sold.
+Pinman is proprietary, closed-source software. This repository contains no source
+code; it exists to distribute releases and to host the public issue tracker.
 
-You may download and install Pinman for your personal use. You may NOT:
+What this file covers:
 
-  - decompile, reverse engineer, disassemble, or otherwise attempt to derive
-    the source code of the software;
-  - redistribute, sublicense, sell, rent, lease, or lend the software or its
-    installers;
-  - modify, adapt, or create derivative works based on the software.
+  - The Pinman software — the installers published on this repository's Releases
+    page and the programs they install. It is licensed, not sold, under the End
+    User License Agreement ("EULA") reproduced in full below. The same agreement
+    is delivered with every release as EULA.txt and is presented for acceptance
+    during installation; the copy delivered with a given release governs that
+    release.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT
-OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+  - Kits published by Parkerhill — released and versioned independently of the
+    software and provided under the MIT license, whose terms accompany each kit.
+    They are not part of the Software. See Section 4 below.
 
-This file is a starting point, not legal advice. Replace it with a formal
-End User License Agreement (EULA) if you need stronger or more specific terms.
+  - Third-party components inside the software — governed by their own notices
+    and license terms, supplied with the software in NOTICES.txt and installed
+    alongside the application. Nothing here limits rights granted under an
+    applicable open-source license.
+
+  - The contents of this repository itself — README, changelog, release notes,
+    documentation, and images — Copyright (c) 2026 Parkerhill Technology Corp,
+    all rights reserved. No right to use the Pinman or Parkerhill names, logos,
+    or trademarks is granted except as needed to refer to them truthfully.
+
+Questions and legal notices: jonathan@parkerhill.com
+
+================================================================================
+
+End User License Agreement — Pinman
+
+Effective date: July 25, 2026
+
+This End User License Agreement ("Agreement") is a legal agreement between you and
+Parkerhill Technology Corp ("Parkerhill," "we," "us," or "our") for the Pinman
+software, including its executable code, documentation, and any updates Parkerhill
+provides under this Agreement (collectively, the "Software"). Kits are not part of the
+Software; Section 4 explains how they are licensed.
+
+Please read this Agreement before installing or using the Software. By selecting "I
+accept," using an installer option that expressly records acceptance, installing, or
+using the Software, you agree to this Agreement. If you do not agree, do not install or
+use the Software. If you accept on behalf of an organization, you represent that you
+have authority to bind it; in that case, "you" means that organization.
+
+1. License grant
+
+Subject to this Agreement and any applicable purchase, activation, or offer terms,
+Parkerhill grants you a limited, non-exclusive, non-transferable license to install and
+use the Software on devices you own or control, for your personal or internal business
+purposes. The number of users or devices and the features available to you may depend on
+your Free or Pro tier, beta participation, purchase, or other entitlement.
+
+The Software is licensed, not sold. A paid perpetual license does not expire unless this
+Agreement is terminated. It includes any maintenance or minor-version updates for the
+licensed major version that Parkerhill generally makes available to the same tier, but
+it does not include future major versions, upgrades to them, support, or online services
+unless the applicable offer or purchase terms say otherwise. Free features may be used
+without charge while Parkerhill makes them available.
+
+You may make a reasonable number of copies solely for backup or archival purposes. All
+rights not expressly granted are reserved by Parkerhill and its licensors.
+
+2. Beta and other pre-release versions
+
+This section applies only to a version identified as beta, preview, evaluation,
+pre-release, or similar. Pre-release Software is provided for testing and evaluation, is
+not a finished product, and may contain defects, be incomplete, change materially, or
+never be commercially released. It may cause errors, downtime, data loss, or other
+damage. Do not rely on it for safety-critical operations, and back up systems and data
+before using it.
+
+Parkerhill may end or modify a pre-release program at any time. Unless Parkerhill states
+otherwise, a beta-only license or temporary beta feature entitlement expires when the
+applicable beta program ends or the corresponding public release becomes generally
+available. Continued use after that time requires a valid Free or Pro entitlement, as
+applicable. General-availability versions remain governed by the other sections of this
+Agreement.
+
+3. Restrictions
+
+Except as this Agreement or applicable law expressly permits, you may not:
+
+1. sell, rent, lease, sublicense, publish, distribute, or otherwise transfer the
+   Software or your license;
+2. reverse engineer, decompile, disassemble, or attempt to derive the Software's source
+   code;
+3. bypass or defeat activation, entitlement, access-control, security, or other
+   technical restrictions in the Software;
+4. remove, alter, or obscure proprietary notices;
+5. use the Software to create or distribute malware, interfere with systems or
+   networks, infringe another person's rights, or violate applicable law; or
+6. use the Software to provide a hosted or service-bureau offering to third parties
+   unless Parkerhill authorizes it in writing.
+
+These restrictions apply only to the maximum extent permitted by law. They do not limit
+rights that cannot lawfully be excluded, including any applicable right to achieve
+interoperability or to make an essential or archival copy.
+
+4. Kits and third-party components
+
+A "kit" is a unit of installable content — schemas, profiles, scripts, reference data,
+and guidance — that describes the files, settings, and software Pinman can track or
+configure. Kits are ordinary editable files, released and versioned independently of the
+application. Some are included with an installer, others are downloaded and installed
+separately, and you may create your own.
+
+Kits are not part of the Software and are not licensed under this Agreement. Kits
+Parkerhill publishes are provided under the MIT license, whose terms accompany each kit.
+You may read, edit, adapt, and redistribute them on those terms; Sections 1 and 3 do not
+apply to them. A kit you create or modify is yours. Section 5 still applies: a modified
+kit may not be presented as released or endorsed by Parkerhill or Pinman.
+
+The Software can manage and interoperate with third-party software and hardware that you
+obtain separately. Parkerhill does not provide or license those third-party products,
+and your use of them is governed by their own terms. A kit may describe or configure a
+third-party product without including, licensing, sponsoring, or endorsing that product.
+
+Kits identified as community-contributed are provided by third parties, not Parkerhill.
+You are responsible for reviewing their source, permissions, and suitability before
+using them.
+
+Sections 10 and 11 apply to kits Parkerhill publishes as they do to the Software.
+
+The Software includes open-source and other third-party components, including standard
+cryptographic and network libraries. Those components are governed by their own notices
+and license terms, which are supplied with the Software in the file NOTICES.txt,
+installed alongside the application. Those terms control if they conflict with this
+Agreement as to the applicable component. Nothing in this Agreement limits rights granted
+under an applicable open-source license.
+
+5. Ownership
+
+Parkerhill and its licensors retain all right, title, and interest in and to the
+Software, including all intellectual-property rights. This Agreement does not grant any
+right to use Parkerhill's or Pinman's names, logos, or trademarks except as needed to
+identify the Software truthfully.
+
+6. Feedback
+
+If you voluntarily provide suggestions, bug reports, or other feedback about the
+Software, you grant Parkerhill a perpetual, irrevocable, worldwide, transferable,
+sublicensable, royalty-free license to use, reproduce, modify, distribute, and
+commercialize that feedback for any purpose. Do not submit feedback you consider
+confidential or that you do not have the right to license. Parkerhill is not required to
+use or compensate you for feedback.
+
+7. Data, privacy, and network security
+
+The Software is designed to capture machine state and application settings in storage
+you control and to make that information available through its web UI, CLI, REST API,
+MCP interface, and other supported interfaces. Using Pinman does not by itself transfer
+that locally managed configuration data to Parkerhill. If you use licensing, update
+check, support, or other online features, those features may transmit limited account,
+entitlement, machine-identifier, version, request, or support information as described
+in the Privacy Policy.
+
+Online features are not present or enabled in every version, and Parkerhill may introduce
+or enable them — including an update check — in a beta or later release. When an online
+feature runs, it connects to Parkerhill or to a third-party host, such as the release
+download host, over a standard encrypted HTTPS connection.
+
+You control which devices and users can access your installation. By default, the
+Software serves its web UI and API over unencrypted HTTP for localhost and trusted
+private-network use. If you enable network access, the Software may be reachable by
+other devices on that network. You are responsible for choosing an appropriate network,
+firewall, authentication, HTTPS reverse proxy, VPN, and other security controls;
+protecting credentials and access tokens; and following the current security
+documentation at
+https://pinmantech.com/docs/guides/networking.
+
+Parkerhill's collection and use of personal information through its website, software,
+beta program, licensing, support, or other services is governed by the Privacy Policy
+at https://pinmantech.com/privacy. A person, device, application, or AI agent you
+authorize may receive locally managed data available through the interface and
+permissions you provide. Third-party services you choose to use have their own privacy
+practices and terms.
+
+8. Your systems and data
+
+The Software can inspect, save, compare, and change configuration data. You are
+responsible for determining whether a capture, kit, profile, or proposed change is
+correct for your systems; maintaining independent, tested backups; reviewing changes
+before applying them; and complying with third-party licenses and organizational
+policies. The Software is not a substitute for a complete system backup
+or disaster-recovery plan.
+
+9. Updates, support, and changes
+
+Parkerhill may provide updates, fixes, or new versions, but is not required to do so
+unless separate written terms say otherwise. Updates may add, change, or remove
+features. An update accompanied by new license terms is governed prospectively by those
+terms after you accept them; this Agreement continues to govern an earlier version.
+
+Parkerhill may offer documentation or support without creating a warranty or ongoing
+support obligation. Any separate order, receipt, or offer controls price, payment,
+refund, license scope, and included support for that transaction. If it conflicts with
+this Agreement, it controls only as to those commercial terms.
+
+10. Disclaimer of warranties
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED "AS IS" AND
+"WITH ALL FAULTS." THE ENTIRE RISK AS TO ITS QUALITY AND PERFORMANCE IS WITH YOU.
+IF THE SOFTWARE PROVES DEFECTIVE, YOU, NOT PARKERHILL, ASSUME THE ENTIRE COST OF
+ALL NECESSARY SERVICING, REPAIR, OR CORRECTION.
+
+PARKERHILL AND ITS LICENSORS DISCLAIM ALL EXPRESS, IMPLIED, AND STATUTORY
+WARRANTIES, CONDITIONS, AND GUARANTEES, INCLUDING MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, QUIET ENJOYMENT, AND THOSE
+ARISING FROM COURSE OF DEALING OR USAGE OF TRADE. PARKERHILL DOES NOT WARRANT THAT
+THE SOFTWARE WILL BE SECURE, UNINTERRUPTED, ERROR-FREE, OR COMPATIBLE WITH EVERY
+SYSTEM, OR THAT DEFECTS WILL BE CORRECTED.
+
+Some jurisdictions do not allow certain warranty exclusions. In those jurisdictions,
+the exclusions apply only to the extent permitted by law, and you may have additional
+rights.
+
+11. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, PARKERHILL AND ITS LICENSORS WILL NOT BE
+LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE
+DAMAGES; LOSS OR CORRUPTION OF DATA; LOSS OF PROFITS, REVENUE, BUSINESS,
+OPPORTUNITY, OR GOODWILL; BUSINESS INTERRUPTION; COMPUTER FAILURE; OR THE COST OF
+SUBSTITUTE PRODUCTS OR SERVICES, ARISING OUT OF OR RELATING TO THE SOFTWARE OR THIS
+AGREEMENT, REGARDLESS OF THE THEORY OF LIABILITY AND EVEN IF ADVISED THAT SUCH
+DAMAGES WERE POSSIBLE.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE TOTAL AGGREGATE LIABILITY OF
+PARKERHILL AND ITS LICENSORS ARISING OUT OF OR RELATING TO THE SOFTWARE OR THIS
+AGREEMENT WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID PARKERHILL FOR THE
+LICENSE GIVING RISE TO THE CLAIM OR (B) USD $50.
+
+These exclusions and limitations apply even if a remedy fails of its essential purpose.
+They do not exclude or limit liability that cannot lawfully be excluded or limited.
+Some jurisdictions do not allow certain exclusions or limitations, so some of this
+section may not apply to you.
+
+12. Term and termination
+
+This Agreement continues until terminated. You may terminate it at any time by stopping
+use and uninstalling all copies of the Software. Parkerhill may terminate it if you
+materially breach it and fail to cure the breach within 10 days after notice, except
+that termination may be immediate for a breach that cannot be cured, unlawful use, or
+circumvention of licensing or security controls.
+
+On termination, your license ends and you must stop using and uninstall the Software.
+Termination does not require you to delete data you created with the Software. Sections
+3 through 8 and 10 through 16 survive termination to the extent their nature requires.
+
+13. Export and sanctions compliance
+
+You must comply with applicable export-control, import, and economic-sanctions laws. You
+may not download, export, re-export, transfer, or use the Software in a prohibited
+destination, by or for a prohibited party, or for a prohibited end use without all
+required authorizations.
+
+You represent that you are not located in, organized under the laws of, or ordinarily
+resident in a country or region subject to comprehensive United States sanctions, and that
+you are neither identified on a United States government restricted-party list nor acting
+for a party that is. You may not use the Software in connection with a prohibited nuclear,
+missile, chemical- or biological-weapons, or military-intelligence end use.
+
+The Software includes standard third-party cryptographic components and may therefore be
+subject to export-control laws that apply to encryption, including the United States
+Export Administration Regulations. You are responsible for determining and satisfying the
+requirements that apply to any export, re-export, or transfer you make.
+
+14. Governing law and venue
+
+This Agreement is governed by the laws of the State of New Hampshire, United States,
+without regard to conflict-of-laws principles. The state and federal courts located in
+New Hampshire have exclusive jurisdiction over disputes arising out of or relating to
+this Agreement or the Software, and each party consents to their personal jurisdiction.
+
+This section does not deprive a consumer of the protection of any law or forum that
+cannot be waived by agreement. The United Nations Convention on Contracts for the
+International Sale of Goods does not apply.
+
+15. General terms
+
+This Agreement, together with any applicable component licenses and purchase or offer
+terms, is the entire agreement about the Software and supersedes prior or
+contemporaneous communications about it. A failure to enforce a provision is not a
+waiver. If a provision is unenforceable, it will be enforced to the maximum extent
+permitted and the remaining provisions will remain in effect.
+
+Parkerhill's Website Terms of Use govern access to its website and hosted content. They
+do not replace or modify this Agreement as it applies to the Software.
+
+You may not assign this Agreement without Parkerhill's written consent, except to the
+extent applicable law requires otherwise. Parkerhill may assign it in connection with a
+merger, reorganization, sale of assets, or transfer of the Software business. Headings
+are for convenience only. "Including" means "including without limitation."
+
+16. Contact
+
+Questions and legal notices may be sent to:
+
+Parkerhill Technology Corp, 286 Parker Hill Rd, Lyman, NH 03585 USA. Email:
+jonathan@parkerhill.com. Website: https://parkerhill.com.

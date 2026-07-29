@@ -1,47 +1,57 @@
-# Changelog
+# Pinman Changelog
 
-All notable changes to **Pinman 2** are documented here.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and versions adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-Pinman 2 is in a **closed beta**. Beta builds are distributed to testers by private
-link; notable changes are summarized here as the beta progresses.
-
-See what's planned next in the [roadmap](ROADMAP.md).
-
----
-
+<!--
 ## [Unreleased]
 
-_Changes landed since the last beta build. At each cut, move these under a new dated
-build heading below._
+  Append a bullet here as each user-visible change lands — not at release time.
+  At the cut, rename this heading to "## [2.0.<YYMMDD>] — Beta · <YYYY-MM-DD>",
+  start a fresh empty [Unreleased] above it, and copy the section into
+  release-notes/pinman-beta.md as that build's "What's new".
 
-## [2.0.YYMMDD] — Beta · YYYY-MM-DD
-
-_First closed-beta build._ Highlights of what Pinman 2 can do today:
 
 ### Added
 
-- **Track what configures a machine** — capture the files, folders, registry keys,
-  and Windows settings that make up a working setup, and browse them in the Explorer.
-- **See what changed** — checkpoints and side-by-side comparisons surface drift
-  between a known-good state and now, down to the individual setting.
-- **Profiles** — collect settings into a Profile, apply it, and undo the last apply;
-  guided manual steps walk you through changes Pinman can't make directly.
-- **Savepoints & backups** — archive a capture's files to a safe copy.
-- **Operator Mode & Technician Mode** — a remote-control Operator Mode (volume,
-  displays, overlays) for day-to-day use and a full Technician Mode for authoring;
-  which you get is set by your login. Control the machine from any phone or browser
-  on the same network.
-- **Journal** — keep dated notes tied to your captures and changes.
-- **Kits** — install a configuration package (schema + profiles + guidance) prepared
-  for a software ecosystem.
-- **Command line & API** — everything the UI does is scriptable.
-- **Getting Started tutorial** — a guided, read-only sample project that teaches the
-  core workflow without touching your real configuration.
+### Changed
+
+### Fixed
+
+-->
+
+## [2.0.260729] — Alpha · 2026-07-29
+
+_First posted build._ Highlights of what Pinman 2 can do today. Consider all features to be in active development and preliminary. 
+
+### Added
+
+- **Dashboaard** - overview of your PC health, settings drift, and prority actions. 
+
+- **Journal** — keep dated notes as you work and modify your PC. Include a checkpoint, which logs specific changes to the machine, in your notes.
+
+- **Captures** - capture the state of your machine at any moment in time, including the files, registry keys, and Windows settings. A Checkpoint is a capture of the state of your machine, for comparison. A Savepoint is a capture that also backs up the changed files.
+
+- **Explore** - browse files and properties, with side-by-side compare of changes over time, across your system, down to individual settings. Drill into data files for specific properties.
+
+- **Schema** - defines the scope of your captures to specific tracked files, properties, settings. Ability to broaden the scope of captures to explore and compare untracked items.
+
+- **Profiles** - defines a target state of a specific set of properties on your computer. Collect changesets of properties into reusable, applyable profiles. Surgically apply a profile to restore a previous set. Undo last apply. Detect drift of the live system against each profiles' target settings.
+
+- **Guided Mode** - profiles can write directly to your data files, system settings, and registry. Or you can author guided manual steps to walk users through changes Pinman can't make directly (work in progress).
+
+- **Machine** - also track hardware devices, ports, and OS settings. Choose hardware devices to watch, track video and USB ports status. Detect tracked applications status and Windows system runtime settings.
+
+- **Operator Mode** — bonus remote-control Operator Mode for machines in a public setting. From any phone or browser, control the volume, dim the displays, lock inputs, show slideshows and text overlays, reboot or shutdown the machine.
+
+- **Localhost** - everything runs on the machine being tracked, not a cloud service, Internet not required. The browser based UI provides access across your LAN.
+
+- **Kits** — install configuration packages (schema + profiles + guidance) prepared for a software ecosystem. Community authoring tools.
+
+- **Interfaces** — browser based user interface (GUI), commandline terminal interface (CLI), REST API means everything is scriptable for humans and AI agents.
+
+- **More** - other features include readonly-mode to protect and sandbox; switch between multiple projects; code signed installer/uninstaller; run Pinman services from system tray; Windows registry blackliset and whitelist; tag tracked items (zones); 
+
+- **Basics tutorial** — a guided, read-only sample project that teaches the core workflow without touching your real configuration.
+
+- **Online docs** - Daaft documentation (work in progress).
 
 ---
 
-Earlier: the closed-beta program opened for applications at
-[pinmantech.com/beta](https://pinmantech.com/beta).

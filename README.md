@@ -7,52 +7,48 @@
 
 > The official download and support home for **Pinman 2**.
 
-Pinman is closed-source software by [Parkerhill Technology Corp](https://parkerhill.com).
-This repository does **not** contain source code — it exists to distribute releases
-(installer + kits) and to track bug reports and feature requests.
+
+**Pinman 2** captures, compares, and manages the files and settings that configure a Windows machine — with a remote-control **Operator Mode** and a full **Technician Mode** built in. It is currently in **beta**.
+
+Pinman is closed-source software by [Parkerhill Technology Corp](https://parkerhill.com). This repository does **not** contain source code — it exists to distribute releases (installer + kits) and to track bug reports and feature requests.
 
 📖 **Website & documentation:** [pinmantech.com](https://pinmantech.com)
 
-**Pinman 2** captures, compares, and manages the files and settings that configure a
-Windows machine — with a remote-control **Operator Mode** and a full **Technician Mode**
-built in. It is currently in **closed beta**.
 
 ---
 
 ## Downloads
 
-### Pinman 2 installer (closed beta)
+### Pinman 2 installer
 
-Pinman 2 is in an **invite-only closed beta**. Accepted testers receive a private
-download link by email — the installer is **not** publicly downloadable yet.
+Pinman 2 is in **beta**. Builds are published on the
+**[Releases](../../releases)** page — installer plus checksums, with notes for each
+one. Versions are dated: `2.0.<YYMMDD>`.
 
 | Package | Status |
 |---|---|
-| Pinman 2 — installer | ![closed beta](https://img.shields.io/badge/-closed%20beta-blue) |
+| Pinman 2 — installer | ![beta](https://img.shields.io/badge/-beta-blue) |
 | Pinman 2 + BallerInstaller bundle | ![planned](https://img.shields.io/badge/-planned-lightgrey) |
 
-🧪 **Want in?** [Apply to the beta program](https://pinmantech.com/beta).
+🧪 **[Join the beta program](https://pinmantech.com/beta)** — so we can tell you when builds land and hear back when something breaks.
 
-Each beta build is recorded on the **[Releases](../../releases)** page (with notes);
-the download link itself is sent to testers by email.
+> **This is beta software.** It reads and writes real configuration — files, registry keys, and Windows settings. (Read-only mode is on by default, disable for writes). Back up anything you can't afford to lose, and prefer a machine you can rebuild over your only working setup. For a safe introduction, start with the Pinman Basics tutorial in the app: a read-only sample project that touches nothing real.
 
-> **Windows SmartScreen note:** if you see a "Windows protected your PC" warning,
-> click **More info → Run anyway**. This appears for installers that aren't yet
-> widely downloaded.
+> **Windows SmartScreen note:** the installer is signed by *Parkerhill Technology Corporation*, but you may still see "Windows protected your PC" until the signature builds download reputation — click **More info → Run anyway**, and check the publisher named in the prompt is Parkerhill.
 
 ### Kits
 
-Kits teach Pinman the files and settings that matter for a particular software
-ecosystem — schemas, profiles, and guidance you install into any Pinman 2 installation.
-Publicly available kits are on the **[Releases](../../releases)** page.
+Kits teach Pinman the files and settings that matter for a particular software ecosystem — schemas, profiles, and guidance you install into any Pinman 2 installation. Publicly available kits are on the **[Releases](../../releases)** page.
 
+<!--
 | Kit | Status |
 |---|---|
 | Example Kit (authoring scaffold) | ![beta](https://img.shields.io/badge/-beta-blue) |
 | BallerInstaller Kit — virtual pinball | ![planned](https://img.shields.io/badge/-planned-lightgrey) |
 
-Install a downloaded kit with `pinman kit install <file>.zip --add`. Community-contributed
-kits are labeled separately from kits tested and released by Pinman.
+-->
+
+Install a downloaded kit with `pinman kit install <file>.zip --add`. Community-contributed kits are labeled separately from kits tested and released by Pinman.
 
 ### System requirements
 
@@ -64,14 +60,11 @@ kits are labeled separately from kits tested and released by Pinman.
 
 - 🐞 **Found a bug?** [Open an issue](../../issues/new/choose).
 - 🔎 Browse existing reports: [open issues](../../issues?q=is%3Aissue+is%3Aopen).
-- 💬 **Question or need help?** Check [Discussions](../../discussions) or see
-  [SUPPORT.md](SUPPORT.md).
+- 💬 **Question or need help?** Check [Discussions](../../discussions) or see [SUPPORT.md](SUPPORT.md).
 - 🗺️ **What's coming next?** See the [ROADMAP](ROADMAP.md).
 - 📝 **Release history:** see the [CHANGELOG](CHANGELOG.md).
 
-> **This is a public issue tracker.** Please don't include private or proprietary
-> information in reports. If a detail matters but can't be public, omit it and email
-> it to <jonathan@pinmantech.com>, mentioning the issue number.
+> **This is a public issue tracker.** Please don't include private or proprietary information in reports. If a detail matters but can't be public, omit it and email it to <jonathan@pinmantech.com>, mentioning the issue number.
 
 Please include your Pinman version and Windows version when reporting a problem.
 
