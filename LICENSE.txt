@@ -1,6 +1,6 @@
 Pinman — License
 
-Copyright (c) 2026 Parkerhill Technology Corp. All rights reserved.
+Copyright (c) 2026 Parkerhill Technology Corporation. All rights reserved.
 
 Pinman is proprietary, closed-source software. This repository contains no source
 code; it exists to distribute releases and to host the public issue tracker.
@@ -24,9 +24,10 @@ What this file covers:
     applicable open-source license.
 
   - The contents of this repository itself — README, changelog, release notes,
-    documentation, and images — Copyright (c) 2026 Parkerhill Technology Corp,
-    all rights reserved. No right to use the Pinman or Parkerhill names, logos,
-    or trademarks is granted except as needed to refer to them truthfully.
+    documentation, and images — Copyright (c) 2026 Parkerhill Technology
+    Corporation, all rights reserved. No right to use the Pinman or Parkerhill
+    names, logos, or trademarks is granted except as needed to refer to them
+    truthfully.
 
 Questions and legal notices: jonathan@parkerhill.com
 
@@ -37,7 +38,7 @@ End User License Agreement — Pinman
 Effective date: July 25, 2026
 
 This End User License Agreement ("Agreement") is a legal agreement between you and
-Parkerhill Technology Corp ("Parkerhill," "we," "us," or "our") for the Pinman
+Parkerhill Technology Corporation ("Parkerhill," "we," "us," or "our") for the Pinman
 software, including its executable code, documentation, and any updates Parkerhill
 provides under this Agreement (collectively, the "Software"). Kits are not part of the
 Software; Section 4 explains how they are licensed.
@@ -301,5 +302,5 @@ are for convenience only. "Including" means "including without limitation."
 
 Questions and legal notices may be sent to:
 
-Parkerhill Technology Corp, 286 Parker Hill Rd, Lyman, NH 03585 USA. Email:
+Parkerhill Technology Corporation, 286 Parker Hill Rd, Lyman, NH 03585 USA. Email:
 jonathan@parkerhill.com. Website: https://parkerhill.com.

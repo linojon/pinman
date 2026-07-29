@@ -10,7 +10,7 @@
 
 **Pinman 2** captures, compares, and manages the files and settings that configure a Windows machine — with a remote-control **Operator Mode** and a full **Technician Mode** built in. It is currently in **beta**.
 
-Pinman is closed-source software by [Parkerhill Technology Corp](https://parkerhill.com). This repository does **not** contain source code — it exists to distribute releases (installer + kits) and to track bug reports and feature requests.
+Pinman is closed-source software by [Parkerhill Technology Corporation](https://parkerhill.com). This repository does **not** contain source code — it exists to distribute releases (installer + kits) and to track bug reports and feature requests.
 
 📖 **Website & documentation:** [pinmantech.com](https://pinmantech.com)
 
@@ -32,7 +32,7 @@ one. Versions are dated: `2.0.<YYMMDD>`.
 
 🧪 **[Join the beta program](https://pinmantech.com/beta)** — so we can tell you when builds land and hear back when something breaks.
 
-> **This is beta software.** It reads and writes real configuration — files, registry keys, and Windows settings. (Read-only mode is on by default, disable for writes). Back up anything you can't afford to lose, and prefer a machine you can rebuild over your only working setup. For a safe introduction, start with the Pinman Basics tutorial in the app: a read-only sample project that touches nothing real.
+> **This is beta software.** It reads and writes real configuration — files, registry keys, and Windows settings. (Read-only mode is on by default, disable for writes). Back up anything you can't afford to lose, and prefer a machine you can rebuild over your only working setup. For a safe introduction, install the **Basics** tutorial project (`pinman tutorial install basics`) — a disposable, read-only sample that touches nothing real — and follow along with the walkthrough in the [docs](https://pinmantech.com/docs).
 
 > **Windows SmartScreen note:** the installer is signed by *Parkerhill Technology Corporation*, but you may still see "Windows protected your PC" until the signature builds download reputation — click **More info → Run anyway**, and check the publisher named in the prompt is Parkerhill.
 

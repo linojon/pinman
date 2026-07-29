@@ -17,7 +17,7 @@
 
 -->
 
-## [2.0.260729] — Alpha · 2026-07-29
+## [2.0.260729] — Beta · 2026-07-29
 
 _First posted build._ Highlights of what Pinman 2 can do today. Consider all features to be in active development and preliminary. 
 
@@ -49,9 +49,9 @@ _First posted build._ Highlights of what Pinman 2 can do today. Consider all fea
 
 - **More** - other features include readonly-mode to protect and sandbox; switch between multiple projects; code signed installer/uninstaller; run Pinman services from system tray; Windows registry blackliset and whitelist; tag tracked items (zones); 
 
-- **Basics tutorial** — a guided, read-only sample project that teaches the core workflow without touching your real configuration.
+- **Tutorials** — ability to install a disposable sample project (`pinman tutorial install basics`) and follow the matching walkthrough in the online docs. (content still being written)
 
-- **Online docs** - Daaft documentation (work in progress).
+- **Online docs** - concepts, guides, and the full CLI reference at [pinmantech.com/docs](https://pinmantech.com/docs). The complete structure is listed, with each page marked *draft* or *soon* while the beta fills it in.
 
 ---
 
