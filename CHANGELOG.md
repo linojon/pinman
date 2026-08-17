@@ -1,13 +1,14 @@
 # Pinman Changelog
 
 <!--
-## [Unreleased]
-
-  Append a bullet here as each user-visible change lands — not at release time.
-  At the cut, rename this heading to "## [2.0.<YYMMDD>] — Beta · <YYYY-MM-DD>",
-  start a fresh empty [Unreleased] above it, and copy the section into
+  Append a bullet under [Unreleased] as each user-visible change lands — not at release
+  time. At the cut, ./scripts/build/release_stamp renames that heading to
+  "## [<version>] — <channel> · <date>", taken from the built installer's own identity,
+  and opens a fresh [Unreleased] above it. Then copy the stamped section into
   release-notes/pinman-beta.md as that build's "What's new".
+-->
 
+## [Unreleased]
 
 ### Added
 
@@ -15,7 +16,58 @@
 
 ### Fixed
 
--->
+## [2.0.260817] — Beta · 2026-08-17
+
+This release centers on the new Basics tutorial — the guided walkthrough of what Pinman does and why. Everything else in the product is here and meant to work.
+
+Pinman currently works with INI and XML configuration files, plus the Windows registry, Windows and device settings, and plain files and directories. Point it at another format and it will tell you that type isn't supported yet, rather than do something half-right with your file. More formats land as the write-path harness proves each one.
+
+### Added
+
+- Profiles page table view
+
+**Basics Tutorial**
+- Added completed Basics tutorial, with full online and static guided documentation, CLI tutorial tools, fully tested.
+- Install using `pinman tutorial install basics`, or the guided `pinman setup` command.
+
+**File Format Support Harness**
+- File format support harness in place, validating Pinman's read and write capability across 88 catalogued file variants over 450 test matrix cells. Variants cover CR/LF line endings, Unicode characters, key/value delimiters and more; operations cover read, create, update and delete.
+- Unsupported cases raise a refusal rather than risking data corruption when writing your files. INI and XML variants are write-ready in this release; anything not yet hardened defaults to refused.
+- Full test suite for each file format.
+- New CLI commands `file support` and `file check` let you test your own files against Pinman's support matrix.
+
+
+### Changed
+
+- Polished some CLI outputs 
+- Polished some UI labels and messages
+- Improved server startup times and user feedback
+- Further registry browsing and expand performance improvements
+- Cleaned up API request logging
+
+### Fixed
+
+- Made CLI capture COM-safe for reading audio settings
+- Fixed read of Windows settings (winrt) during profile drift detection
+- Fixed timeout of extracted registry (winreg) hive file preload on discovery 
+- Fixed timeout of expand very large containers
+- Fixed discovery of items inside kit-adopted containers
+- Fixed schema import of tracked paths for all item types
+- Fixed for-block items not appearing in captures at tracked scope
+- Fixed refresh accuracy for registry and Windows settings captures
+- Fixed change rollup status on container items
+- Fixed registry captures skipping unreadable keys instead of failing
+- Fixed database busy errors during concurrent operations
+- Fixed capture counts and labels in CLI output
+- Tutorial restart no longer clears existing logs
+
+
+### Status
+
+- pytest: 5179/5179 tests pass
+- vitest: 364/364 tests pass
+
+---
 
 ## [2.0.260729] — Beta · 2026-07-29
 
