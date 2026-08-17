@@ -7,13 +7,13 @@ Found a bug or have a request? [Open an issue](../../issues/new/choose).
 
 ---
 
-- Backups: Restore files and settings, from a savepoint or within the Explorer
+- Backups: Restore files and settings, from a savepoint or within Explore
 - Backups: Move backups to a different drive or folder
 - Captures: Live refresh mode
 - Profiles: Build out the guided manual mode instructions
 - Profiles: Advanced profile interfaces and parameters; compound profiles
 - Schema: Improved schema authoring via UI
-- Bundles: Explorer lens of associated items
+- Bundles: Explore lens of associated items
 - Bundles: Collect and archive, restore
 - Journal: Record mode for automatic checkpoints
 - Diagnostics: System health metrics
