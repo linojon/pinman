@@ -16,6 +16,8 @@
 
 ### Fixed
 
+### Status
+
 ## [2.0.260827] — Beta · 2026-08-27
 
 This release does two things. It makes the Basics tutorial run the way it reads, and it lays the groundwork for a change in how Pinman models what a capture actually *covers*. In real use you broaden a container here, refresh the head there, apply a profile, broaden again, and the head ends up reaching different depths in different places. Pinman now records that coverage as part of the capture itself, in its database rather than only in your browser, so it survives a refresh and a restart. The surfaces that will *show* you a capture's coverage come next. A large equivalence harness — hundreds of scenarios across files, the registry, Windows settings, and bundles — exists to keep the model honest, and much of this release's work went into it.
@@ -39,6 +41,10 @@ This release does two things. It makes the Basics tutorial run the way it reads,
 - **The Basics tutorial's chapter 7 can be completed as written.** Turning a tracked Windows setting *off* is now noticed as the setting going away — in the registry and in Windows settings alike. Pinman used to see a value appear and never see it disappear, so the chapter's round trip never closed.
 - Other miscellaneous fixes and improvements in core engine, CLI, and UI.
 
+### Status
+
+- pytest: 5446/5446 tests pass
+- vitest: 374/374 tests pass
 
 ## [2.0.260817] — Beta · 2026-08-17
 
