@@ -16,6 +16,30 @@
 
 ### Fixed
 
+## [2.0.260827] — Beta · 2026-08-27
+
+This release does two things. It makes the Basics tutorial run the way it reads, and it lays the groundwork for a change in how Pinman models what a capture actually *covers*. In real use you broaden a container here, refresh the head there, apply a profile, broaden again, and the head ends up reaching different depths in different places. Pinman now records that coverage as part of the capture itself, in its database rather than only in your browser, so it survives a refresh and a restart. The surfaces that will *show* you a capture's coverage come next. A large equivalence harness — hundreds of scenarios across files, the registry, Windows settings, and bundles — exists to keep the model honest, and much of this release's work went into it.
+
+### Added
+
+- **Software inventory** now tracks versions. A scan reports what was found, what's gone, and what changed version since last time, and files the result in the Journal.
+- Tutorial install now offers to open the guided walkthrough for you, rather than just naming the command that would.
+- Pinman registers itself as a proper Windows app identity, so notifications and the taskbar show the "Pinman" icon.
+
+### Changed
+
+- Adopted the new flat Pinman logo across the product.
+- UI polish: Explore toolbar and item-rows. Device role picker. 
+- Installer and uninstaller improvements, including unattended installs.
+- Tray improvements, including watchdog on the services it supervises.
+- Basics tutorial guide (content version **1.0.2**) - clarified instructions and improved other prose and screenshots. 
+
+### Fixed
+
+- **The Basics tutorial's chapter 7 can be completed as written.** Turning a tracked Windows setting *off* is now noticed as the setting going away — in the registry and in Windows settings alike. Pinman used to see a value appear and never see it disappear, so the chapter's round trip never closed.
+- Other miscellaneous fixes and improvements in core engine, CLI, and UI.
+
+
 ## [2.0.260817] — Beta · 2026-08-17
 
 This release centers on the new Basics tutorial — the guided walkthrough of what Pinman does and why. Everything else in the product is here and meant to work.
