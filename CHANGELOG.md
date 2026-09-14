@@ -1,6 +1,17 @@
 # Pinman Changelog
 
 <!--
+  This changelog is an end-user-facing account of each release, not a strict internal
+  "done" list. Write in plain, approachable language and emphasize what users can do,
+  what feels better or safer, and the direction Pinman is moving. Avoid or translate
+  internal architecture, implementation mechanics, sprint management, test-board
+  bookkeeping, and similar project vocabulary unless a user needs it to understand the
+  change. Consolidate overlapping entries from git history and release plans rather than
+  copying their raw task lists. It is fine to group work, summarize loosely, and take
+  reasonable descriptive liberties; favor a useful, honest weathervane over exhaustive or
+  contractual precision. Keep concrete commands, user-visible limitations, and other
+  details that help someone use or evaluate the release.
+
   Append a bullet under [Unreleased] as each user-visible change lands — not at release
   time. At the cut, ./scripts/build/release_stamp renames that heading to
   "## [<version>] — <channel> · <date>", taken from the built installer's own identity,
@@ -16,7 +27,77 @@
 
 ### Fixed
 
+## [2.0.260914] — Beta · 2026-09-14
+
+This beta is largely about trust: keeping captures coherent as you explore, broaden, and refresh
+them, and making Profile Apply safer when it writes settings back to your machine. Pinman now does
+more checking before and after a write, refuses formats it cannot yet handle safely, and does a
+better job of explaining read and write failures.
+
+Operator Mode has also been rebuilt on Pinman 2 Profiles. It remains an optional, mobile-friendly
+control panel for everyday workstation controls such as volume, brightness, messages, slideshows,
+and power. This new foundation brings Operator controls into the same system as other Profiles and
+moves Pinman closer to letting users build custom control panels of their own.
+
+### Added
+
+- **Operator Kit:** Add the rebuilt Operator controls to any project with
+  `pinman kit import operator`.
+- **Profile and Operator controls:** A new library of reusable UI controls lays the groundwork for
+  customizable control panels built around Profiles.
+- **REST settings:** Pinman can now track and apply settings exposed by REST APIs. Operator Mode
+  uses this new capability for its controls.
+- **Capture checks:** `pinman capture check` inspects a capture for errors and inconsistencies and
+  reports their severity.
+- Read failures now appear on the affected setting or container with an explanation.
+- New file inspection commands — `pinman file list`, `pinman file show`, and
+  `pinman file check` — make it easier to see what Pinman can safely read or write. Use
+  `pinman file list -v --domain all` for the current support details.
+- Added read and write support for more INI and XML variants, including XML files with comments,
+  mixed markup, significant whitespace, and UTF-8 content.
+- Added CSV file reading.
+- Added `pinman --version`.
+
+### Changed
+
+- **Safer Profile Apply:** Pinman checks file support before writing, validates the result afterward,
+  and rolls back the whole apply when a write fails.
+- Enabling Operator Mode in UI Config now installs the Operator Kit when needed and restarts the
+  Pinman services for you.
+- UI configuration changes that need a service restart can now perform that restart for you.
+- Explorer's expand, broaden, and refresh controls are clearer, including the distinction between
+  an empty container and one that has not been scanned yet.
+- Scan and discovery work has been streamlined for better performance and fewer duplicate results.
+- The old Operator Actions and Scheduler pages are temporarily unavailable while they are rebuilt
+  around Profiles.
+- The Machine Windows Services tab is temporarily unavailable while its noisy capture behavior is
+  being corrected.
+
+### Fixed
+
+- Captures now retain tracked files, folders, and registry keys that are currently absent when you
+  broaden or refresh their parent container.
+- Refreshing, broadening, or selectively updating a capture now preserves its scope and change
+  history more reliably, including statuses, timestamps, counts, and fingerprints.
+- Pinman now distinguishes more reliably between a deleted setting, a setting that is simply
+  absent, and one that could not be read.
+- Fixed several cases where a refreshed capture could disagree with a newly created capture of the
+  same machine state.
+- Registry scans now handle very large keys, including hive roots, more reliably, and registry
+  reads are no longer accidentally skipped by an unrelated backup setting.
+- Windows runtime setting failures are reported consistently instead of being mistaken for missing
+  settings.
+- File undo now refreshes the recorded machine state after restoring a file.
+- Fixed encoding and byte-order-mark handling for screen-resolution configuration files.
+- The welcome popup now shows a countdown before it closes automatically.
+- Deleting a project now deletes its logs too.
+
 ### Status
+
+Pytest: 7098/7098 tests pass
+Vitest: 418/418 tests pass
+
+
 
 ## [2.0.260827] — Beta · 2026-08-27
 
@@ -136,4 +217,3 @@ _First posted build._ Highlights of what Pinman 2 can do today. Consider all fea
 - **Online docs** - concepts, guides, and the full CLI reference at [pinmantech.com/docs](https://pinmantech.com/docs). The complete structure is listed, with each page marked *draft* or *soon* while the beta fills it in.
 
 ---
-
