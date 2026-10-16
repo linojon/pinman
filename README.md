@@ -14,6 +14,8 @@ Pinman is closed-source software by [Parkerhill Technology Corporation](https://
 
 📖 **Website & documentation:** [pinmantech.com](https://pinmantech.com)
 
+▶ **Videos:** [Pinman Tech on YouTube](https://www.youtube.com/channel/UCNSCE115eQp0MQR88m8sMNw).
+
 
 ---
 
@@ -48,7 +50,7 @@ Kits teach Pinman the files and settings that matter for a particular software e
 
 -->
 
-Install a downloaded kit with `pinman kit install <file>.zip --add`. Community-contributed kits are labeled separately from kits tested and released by Pinman.
+Install a downloaded kit with `pinman kit install <file>.zip --import`. Community-contributed kits are labeled separately from kits tested and released by Pinman.
 
 ### System requirements
 

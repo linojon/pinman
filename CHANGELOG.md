@@ -27,6 +27,86 @@
 
 ### Fixed
 
+## [2.0.261016] — Beta · 2026-10-16
+
+This beta brings **Restore**: you can now put files back the way a Savepoint recorded them, straight
+from your capture history, without building a Profile first. Alongside it, Pinman is more careful
+about every change it makes to your machine. When it won't write something, it now tells you why
+and what you can do about it, before anything is touched, and you can tell it to make no file
+changes at all until you've saved a backup.
+
+Under the hood, the capture engine has had a large round of improvements: captures stay accurate as
+you broaden and refresh them, Pinman is clearer about the difference between a setting that is
+missing and one it simply couldn't read, and the writers for many file formats are now stricter
+about preserving your files exactly as they were. The Journal, Operator Mode, and log files all
+received attention too.
+
+Watch the new **Pinman Basics walkthrough video** on YouTube: https://youtu.be/irBQdxMNfgA
+
+### Added
+
+- **Restore:** Put a Savepoint's files back on your machine, for the whole capture or just the
+  items you choose. Use **Restore…** on a Savepoint in the capture history, or
+  `pinman capture restore`. Add `--preview` to see what would change first.
+- **Require a Savepoint:** A new setting in UI Config. When it's on, Pinman changes a file only if
+  a Savepoint already holds that file as it is now; otherwise it asks you to take one first or to
+  overwrite anyway.
+- **Journal:** Notes now have a formatted editor, can be deleted, and can be filtered by where they
+  came from.
+- **Operator login** is enabled. Pinman now has two roles: Operator and Technician.
+- **Log rotation:** Log files now roll over automatically, with configurable limits.
+  `pinman log rotate` starts a fresh log on demand, and `pinman log list` shows the older ones.
+- Tutorial commands in the CLI now show each tutorial's version number.
+
+### Changed
+
+- **Clear reasons when a write is refused:** If Pinman won't change a setting, it says why and what
+  to do about it, the same way in the UI and the CLI, and before it writes anything.
+- **Checkpoint is now the default capture** (settings granularity), instead of File Checkpoint.
+- **Profiles:** Status, Preview, and Apply now agree with each other. A Profile can no longer show
+  "In sync" while Apply refuses to run. Profiles also cope better with settings that can't be read
+  and devices that are unavailable, and Undo now refreshes your capture correctly afterward.
+- **Operator Mode** follows its on/off setting everywhere, and tells the operator when something
+  will be refused or hasn't been picked up yet.
+- **Safer file writes:** Writing settings back keeps each value's original type and preserves the
+  rest of the file as it was, with more checking before and after each write across INI, XML,
+  JSON, YAML, CSV, SQLite, PinMAME, and PinVol files. Formats that aren't yet approved for writing
+  are still refused.
+- **Upper and lower case** in registry keys and file settings is now handled the way each format
+  expects.
+- Paths and names containing special characters such as `*`, `/`, and `\` are now handled
+  correctly.
+- Explorer now shows absent items by default.
+- The Explorer toolbar collapses gradually as the window gets narrower.
+- The tray menu has been updated.
+- Backup files are now named in a way that keeps working when a schema update or kit import adds
+  locations to your tree.
+- Pinman no longer lets two operations that change the same capture run over each other.
+
+### Fixed
+
+- Pinman now tells you when it couldn't read a setting (because it was unavailable or access was
+  denied) instead of reporting it as missing or removed. This covers the registry, Windows
+  settings, and REST services.
+- Captures stay more accurate as you broaden, refresh, and narrow them, including values carried
+  forward from earlier captures.
+- Mapped and network drives are handled more reliably.
+- Importing a kit whose locations overlap your existing tree now works correctly.
+- Deleting a capture in the middle of a chain no longer breaks the backups that later captures rely
+  on.
+- Deleting a merged capture after a revert could destroy the only copy of its data. Fixed.
+- Resuming a backup after cancelling it now keeps its backup location.
+- `pinman capture delete --latest` deletes the right capture.
+- `pinman winreg diff --live` no longer crashes, and registry keys Pinman isn't allowed to read are
+  reported as unread.
+- The installer no longer risks starting Pinman twice.
+- Fixed a problem saving schema edits.
+
+### Status
+
+Pytest: 14,371/14,371 tests pass
+Vitest: 726/726 tests pass
+
 ## [2.0.260914] — Beta · 2026-09-14
 
 This beta is largely about trust: keeping captures coherent as you explore, broaden, and refresh
@@ -96,8 +176,6 @@ moves Pinman closer to letting users build custom control panels of their own.
 
 Pytest: 7098/7098 tests pass
 Vitest: 418/418 tests pass
-
-
 
 ## [2.0.260827] — Beta · 2026-08-27
 

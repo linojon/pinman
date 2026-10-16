@@ -7,7 +7,6 @@ Found a bug or have a request? [Open an issue](../../issues/new/choose).
 
 ---
 
-- Backups: Restore of files and settings, from a savepoint or in Explore
 - Backups: Relocation of backups to a different drive or folder
 - Captures: Live refresh mode
 - Profiles: Guided manual mode instructions
@@ -18,7 +17,7 @@ Found a bug or have a request? [Open an issue](../../issues/new/choose).
 - Journal: Record mode for automatic checkpoints
 - Diagnostics: System health metrics
 - Diagnostics: MCP interface for AI agents
-- Auth: Operator, manager, and technician roles with entitlements
+- Auth: Operator and Technician roles with entitlements
 - Auth: License key registration and management — required for public release
 - Kits: Pinball, business, and IT specific kits releases
 - Kits: Kits authoring tools and manage community contributions
