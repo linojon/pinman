@@ -11,7 +11,6 @@ Found a bug or have a request? [Open an issue](../../issues/new/choose).
 - Captures: Live refresh mode
 - Profiles: Guided manual mode instructions
 - Profiles: Advanced profile interfaces and parameters; compound profiles
-- Schema: Schema authoring in the UI
 - Bundles: Explore lens of associated items
 - Bundles: Collect, archive, and restore
 - Journal: Record mode for automatic checkpoints

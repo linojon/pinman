@@ -27,6 +27,66 @@
 
 ### Fixed
 
+## [2.0.261031] — Beta · 2026-10-31
+
+This beta introduces **Tracking from Scratch**, a guided tutorial for building a Pinman schema from a
+blank project. It covers tracking whole files and individual settings, excluding unwanted files,
+creating Captures, and reviewing changes in Explorer.
+
+Blank projects can now be configured in the UI without starting from a prebuilt kit. You can add
+and edit tracking for files, INI settings, directories, Registry values, and Windows settings.
+Profiles can also update JSON, YAML, CSV, SQLite, PinMAME, and PinVol data in this release.
+
+Explorer now shows when a comparison is incomplete because something could not be read or was not
+fully scanned. Incomplete results are no longer presented as a confirmed match. This release also
+improves the accuracy of Capture and Refresh, makes Profile Apply and Undo more reliable, and
+better handles items that disappear and return.
+
+> **Important:** Reset your projects after installing this build. Captures from earlier builds are
+> not carried forward reliably, so start each project fresh.
+
+### Added
+
+- **Tracking from Scratch tutorial (1.0.0):** Start with a blank project and build a useful schema around
+  the files, settings, and Windows configuration that matter. Install it with
+  `pinman tutorial install tracking`, or choose it from guided setup.
+- **Additional formats for Profile Apply:** Profiles can now update JSON, YAML, CSV, SQLite,
+  PinMAME INI, and PinVol settings and tables. CSV and SQLite rows use declared identities so
+  Pinman can verify and undo changes to the intended record.
+- **Capture Details:** Explorer and the CLI now distinguish failed reads, incomplete scans, and
+  missing reference evidence. Counts indicate whether they are exact (`N`), a known minimum
+  (`N+`), or unknown (`?`). The Details panel explains unresolved items without silently scanning
+  anything.
+- **Show hidden:** When a folder scan leaves out Windows hidden or temporary items, Explorer shows
+  how many were withheld and lets you include them for that folder until the next capture.
+
+### Changed
+
+- The System page now reads Monitoring values live. Discovered Windows settings also retain their
+  catalog labels, descriptions, units, and read/write policy.
+- **Tracking UI:** Improved the dialogs and controls for adding and editing tracked items.
+
+### Fixed
+
+- Captures preserve their selected scope, stored evidence, historical detail, and change counts
+  more reliably through Refresh, local scans, missing-and-returning items, sparse history, and
+  alternate-reference comparisons.
+- Profile Apply can create a declared setting in a tracked file that has never appeared in a
+  capture, verify it, and Undo it normally. Missing or unreadable targets still refuse safely.
+- Explorer no longer loses restored settings during Broaden, invents removed settings below the
+  recorded scope, or leaves stale rows and expansion state after a refresh or tracking change.
+- Browsing untracked files no longer hashes their contents just to list them, avoiding unnecessary
+  reads and access-denied warnings on locked files.
+- Fixed several UI interaction problems, including first-click scan conflicts, current-row
+  activation, realm-root expansion, narrow-layout status controls, and login-role timing.
+- Live Windows Monitoring no longer serves stale capture values, loses concurrent extract updates,
+  or lets a slow NVIDIA query hold up the Pinman service.
+
+### Status
+
+Pytest: 16,664/16,664 tests pass
+Vitest: 1,128/1,128 tests pass
+
 ## [2.0.261016] — Beta · 2026-10-16
 
 This beta brings **Restore**: you can now put files back the way a Savepoint recorded them, straight
