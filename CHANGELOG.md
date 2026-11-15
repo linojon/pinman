@@ -139,7 +139,7 @@ Schema UI
 
 ### Status
 
-Pytest: 17,230 passed, 6 skipped, 1 expected xfail
+Pytest: 17,230/17,230 passed
 Vitest: 1,284/1,284 tests pass
 
 ## [2.0.261031] — Beta · 2026-10-31
