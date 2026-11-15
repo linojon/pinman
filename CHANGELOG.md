@@ -27,6 +27,121 @@
 
 ### Fixed
 
+## [2.0.261115] — Beta · 2026-11-15
+
+This beta makes Pinman substantially more authorable. Schema authors now have a complete
+interactive CLI for building and validating schemas, while the UI gains a clearer common path for
+tracking rules. Profiles can now be created, composed and maintained in a guided editor instead of
+requiring direct source edits for ordinary work.
+
+The rest of Pinman has caught up around those workflows. Explore, the Dashboard and Operator Mode
+are easier to use; the online documentation now covers the principal Technician screens and core
+concepts; and the capture engine stores and transfers less redundant item data without losing
+comparison or failure detail.
+
+> **Important:** Reset existing beta projects after installing this build. Beta 5 replaces
+> Pinman's internal item-evidence storage without migrating projects from earlier beta builds, so
+> reinstall or reseed disposable/tutorial projects and recreate other test projects before use.
+> Custom Python Profiles must also move from `p.param(...)` to typed `p.input(...)` declarations,
+> read values through `p.inputs.<name>`, and pass CLI values with `--input` instead of `--param`.
+
+### Schema
+
+Schema CLI
+- Build a schema from a blank project with interactive CLI commands to inspect, add, edit, move and
+  remove definitions. Commands support structured output, dry runs and confirmation for destructive
+  changes, so advanced authoring no longer requires replacing an entire YAML file.
+- Validate a schema or preview an import against an isolated copy of the active project. The preview
+  reports definitions, declarations and ordering that would change without touching the live
+  schema.
+- Manage Zones, Software declarations and Device roles from the CLI, including reference-aware
+  previews before a rename, replacement or deletion.
+- Replacing a tutorial or disposable project's schema is safer: Pinman validates the new schema
+  before removing the old project, and preserves a supported retry path if a later setup step fails.
+
+Schema UI
+- The Schema item dialog has a clearer Advanced section for constants and saved definitions.
+- The UI can now add, edit and remove single-level matching rules for files, INI sections and XML
+  elements, including the template item created by each rule.
+
+### Profiles UI and scripts
+
+- Create and edit Profiles in the UI, including metadata, literal targets and typed inputs such as
+  choices. Targets can be selected from the live Head or a historical Capture.
+- Organize Profile contents into settings that are always used and settings selected by a choice.
+  A choice can also include another Profile, with its inputs mapped into the parent Profile.
+- Compose reusable Profiles to run together, inspect the effective targets and resolve conflicting
+  inputs before saving.
+- Profile edit history keeps bounded source snapshots, with Undo Last Edit and restore for an
+  earlier version.
+- Profiles can be pinned to the Dashboard, and those pins persist between sessions.
+- Large Profile libraries, editors and Preview/Apply reviews are more compact and responsive when a
+  Profile contains dozens of inputs or targets.
+- Profile status now refreshes correctly after the live Head changes, and editing a Profile rechecks
+  only the affected status instead of leaving stale results.
+- Zone selection, linked choice content and target grouping are more reliable and easier to
+  understand across live and historical sources.
+- An optional restricted mode for Profile scripts blocks unapproved Python while the Machine is
+  read-only. Pinman shows why a script was blocked and lets a Technician grant full Python to one
+  exact script version. This is a guard rail, not a security sandbox.
+
+### Explore and Captures UI
+
+- Explore's flat table now shows the items that actually match the current view without adding
+  ancestor rows whose status came only from a matching child.
+- Keyboard and row focus stay aligned when navigating, selecting items or switching between tree
+  and table views.
+- Item-type icons, expansion controls and column-resize handles are more consistent across Explore
+  and the rest of the UI.
+- Profile target views now group settings under recognizable containers, while Explore's Table view
+  remains flat and change-focused.
+- Stored capture evidence and Item API responses no longer repeat several derived representations,
+  reducing database use and response size while preserving comparison, completeness and read-failure
+  meaning.
+
+### Dashboard, Operator and Journal UI
+
+- The Technician Dashboard has clearer status blocks, quick actions and machine presentation, plus
+  a machine-image picker whose selection is saved with that machine's identity.
+- Operator controls use space more effectively on phones and narrow displays, with improved power,
+  mode, message and color controls.
+- Operators can add a note directly from the controls screen and review recent Operator notes
+  without switching to the full Journal.
+- Operator and Technician requests no longer interfere with each other's Profile data while both
+  interfaces are in use.
+- The welcome window can now be disabled from its own controls or the tray menu; the preference is
+  retained for later launches and removed on uninstall.
+
+### CLI and terminology
+
+- Product language now uses **Software** consistently across schemas, Explore, the Software catalog,
+  the API and the CLI. Catalog-wide status now says **Available** or **Unavailable** when Pinman is
+  reporting whether it can find that Software.
+- CLI object names, identifiers, option labels and help now follow a more consistent command
+  structure. Registry search logic also uses the shared core implementation instead of a separate
+  CLI-only path.
+
+### Documentation
+
+- New visual reference pages cover Dashboard, Explore, Captures, Schema, Profiles, the Profile
+  editor, Journal, Machine, Services and Config, with layouts and controls shown at desktop and
+  narrow widths.
+- New and rewritten guides cover how Pinman works, core concepts, Captures, Profiles, schema
+  authoring, supported file formats, Windows Registry and runtime settings, external Software, Kits
+  and what Pinman will and will not change.
+
+### Reliability
+
+- Database upgrades now reconcile the independent Profile-script and item-evidence changes in this
+  release instead of leaving competing migration heads.
+- Profile authoring errors and blocked linked content remain visible in the library, status and
+  preview paths instead of disappearing or failing later during Apply.
+
+### Status
+
+Pytest: 17,230 passed, 6 skipped, 1 expected xfail
+Vitest: 1,284/1,284 tests pass
+
 ## [2.0.261031] — Beta · 2026-10-31
 
 This beta introduces **Tracking from Scratch**, a guided tutorial for building a Pinman schema from a

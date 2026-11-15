@@ -10,7 +10,6 @@ Found a bug or have a request? [Open an issue](../../issues/new/choose).
 - Backups: Relocation of backups to a different drive or folder
 - Captures: Live refresh mode
 - Profiles: Guided manual mode instructions
-- Profiles: Advanced profile interfaces and parameters; compound profiles
 - Bundles: Explore lens of associated items
 - Bundles: Collect, archive, and restore
 - Journal: Record mode for automatic checkpoints
